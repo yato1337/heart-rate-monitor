@@ -11,7 +11,7 @@
         background-color:#FFFF;
         top: 50%;
         transform: translateY(-50%);
-        left: -66px;
+        left: -42px;
         img{
             width: 31px;
             height: 50px;
@@ -19,6 +19,26 @@
     }
     .slick-next {
         left: auto;
-        right: -66px;
+        right: -44px;
     }
+    .slick-dots{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        button {
+            background:#eac8be;
+            border: none;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+            outline: none;
+            font-size: 0;
+        }
+    }
+    .slick-dots li[class="slick-active"] button {
+        background: $main-color; 
+    }    
 }
