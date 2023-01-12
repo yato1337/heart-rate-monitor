@@ -269,6 +269,18 @@
             
         }
     }
+    .footer{
+        &__info {
+            width: 320px;
+        }
+        &__social-item {
+            height: 35px;
+            width: 35px;
+            img {
+                height: 20px;
+            }
+        }
+    }
 
 }
 
