@@ -23,7 +23,7 @@
             </div>
             <div class="header__contacts">
                 <a href='tel:+7 (499) 922-89-74' class="header__phone">+7 (499) 922-89-74</a>
-                <button class="button">Заказать звонок</button>
+                <button data-modal="consultation" class="button">Заказать звонок</button>
             </div>
         </header>
         <div class="promo__wrapper">
@@ -43,7 +43,7 @@
                     Ответим на все вопросы
                 </div>
             </div>
-            <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+            <button  data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
             <div class="promo__link">
                 или
                 <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -387,10 +387,39 @@
                 <a href="#" class="footer__social-item"><img src="./icons/inst.png" alt=""></a>
                 <a href="#" class="footer__social-item"><img src="./icons/pinterest.png" alt=""></a>
             </div>
-
         </div>
-
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
+            <p class="modal__descr">и мы перезвоним вам в течении 10 минут</p>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_subbmit">заказать консультацию</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__subtitle">Ваш заказ:</h2>
+            <p class="modal__descr">Пульсометр Polar FT1</p>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_subbmit">купить</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__subtitle">Спасибо за вашу заявку!</h2>
+            <p class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</p>
+        </div>
+        
+    </div>
 
 
 
